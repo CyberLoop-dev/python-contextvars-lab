@@ -27,19 +27,22 @@ Requires Python 3.11+. No third-party packages are needed.
 ~~~bash
 python contextvars_lab.py
 python contextvars_lab.py --json
-python -m unittest discover -s tests
+python -m unittest discover -s tests -t .
 ~~~
 
 ## 🧰 Tech Stack
 - Python 3.11+
 - <code>asyncio</code>, <code>contextvars</code>, standard library
+- <code>pyproject.toml</code> project metadata
 
 ## 🗂️ Folder Structure
 ~~~text
 python-contextvars-lab/
 ├── assets/mark.svg
+├── tests/__init__.py
 ├── tests/test_contextvars_lab.py
 ├── contextvars_lab.py
+├── pyproject.toml
 ├── .gitignore
 ├── LICENSE
 └── README.md
